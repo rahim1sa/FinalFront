@@ -1,0 +1,563 @@
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif; }
+
+#header .container {
+  padding: 0px 20px; }
+#header .headerSearch {
+  padding: 10px 0; }
+  #header .headerSearch input {
+    border: none;
+    outline: none; }
+#header .headerPhone {
+  padding-left: 20px; }
+  @media screen and (min-width: 767px) {
+    #header .headerPhone {
+      float: right; } }
+  @media screen and (max-width: 767px) {
+    #header .headerPhone {
+      float: left; } }
+  @media screen and (max-width: 330px) {
+    #header .headerPhone a {
+      font-size: 11px; } }
+  #header .headerPhone a {
+    color: #606473; }
+    #header .headerPhone a:hover {
+      text-decoration: none;
+      color: #53B778; }
+  #header .headerPhone img {
+    padding: 0 20px; }
+#header .navbarSection {
+  width: 100%;
+  padding: 30px 0; }
+  @media screen and (min-width: 767px) {
+    #header .navbarSection #listBtn {
+      display: none; } }
+  @media screen and (max-width: 767px) {
+    #header .navbarSection #listBtn {
+      background: white; } }
+  @media screen and (max-width: 767px) {
+    #header .navbarSection {
+      padding-bottom: 0px;
+      padding-top: 10px; } }
+  @media screen and (min-width: 200px) and (max-width: 314px) {
+    #header .navbarSection img {
+      padding: 8px; }
+    #header .navbarSection #listBtn {
+      font-size: 25px; } }
+  @media screen and (min-width: 767px) and (max-width: 992px) {
+    #header .navbarSection img {
+      padding: 8px 0; } }
+  @media screen and (min-width: 314px) and (max-width: 767px) {
+    #header .navbarSection img {
+      padding: 8px 20px; } }
+  @media screen and (min-width: 767px) and (max-width: 992px) {
+    #header .navbarSection ul li {
+      font-size: 0.9em;
+      padding-left: 15px; } }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    #header .navbarSection ul li {
+      padding-left: 30px; } }
+  @media screen and (min-width: 1200px) {
+    #header .navbarSection ul li {
+      padding-left: 31px; } }
+  @media screen and (min-width: 767px) {
+    #header .navbarSection ul {
+      height: 80px; }
+      #header .navbarSection ul li {
+        font-size: 15px; } }
+  @media screen and (min-width: 1200px) {
+    #header .navbarSection ul li {
+      font-size: 18px; } }
+  #header .navbarSection .navbar-header span {
+    font-size: 30px;
+    font-weight: 900;
+    padding: 20px; }
+  #header .navbarSection .aktive {
+    border-bottom: 2px solid #53B778; }
+  #header .navbarSection .navPage {
+    position: relative; }
+    #header .navbarSection .navPage .innernavPage {
+      display: inline-block;
+      cursor: pointer; }
+      #header .navbarSection .navPage .innernavPage a {
+        padding: 15px 0 10px 0;
+        border-bottom: 0px solid #53B778;
+        color: #606473;
+        transition: all 0.3s ease;
+        background: white; }
+        #header .navbarSection .navPage .innernavPage a:hover {
+          background: none;
+          color: #7D7D7D;
+          border-bottom: 2px solid #53B778; }
+      #header .navbarSection .navPage .innernavPage button {
+        padding: 10px;
+        background: #53B778;
+        color: white;
+        border: 2px solid #53B778;
+        transition: all 0.3s ease; }
+        #header .navbarSection .navPage .innernavPage button:hover {
+          background: white;
+          color: #53B778;
+          border: 2px solid #53B778; }
+  #header .navbarSection #serDropNav {
+    position: absolute;
+    width: 320px;
+    height: 276px;
+    list-style: none;
+    background: white;
+    z-index: 10;
+    top: 50px;
+    padding: 34px 25px; }
+    #header .navbarSection #serDropNav li {
+      padding: 5px; }
+      #header .navbarSection #serDropNav li:hover {
+        color: #53B778; }
+      #header .navbarSection #serDropNav li a {
+        font-size: 14px;
+        color: #606060;
+        padding-left: 25px;
+        text-decoration: none; }
+        #header .navbarSection #serDropNav li a:hover {
+          color: #53B778; }
+      #header .navbarSection #serDropNav li span {
+        font-size: 16px; }
+#header #serDropNav2 {
+  position: relative;
+  width: 320px;
+  height: 240px;
+  list-style: none;
+  background: white;
+  padding: 34px 0px; }
+  #header #serDropNav2 li {
+    padding: 5px; }
+    #header #serDropNav2 li:hover {
+      color: #53B778; }
+    #header #serDropNav2 li a {
+      font-size: 14px;
+      color: #606060;
+      padding-left: 25px;
+      text-decoration: none; }
+      #header #serDropNav2 li a:hover {
+        color: #53B778; }
+    #header #serDropNav2 li span {
+      font-size: 16px; }
+#header .dropBtn ul {
+  background: white; }
+  #header .dropBtn ul li a {
+    padding: 10px 0 10px 20px;
+    color: #606473;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #53B778; }
+    #header .dropBtn ul li a:hover {
+      background: #53B778;
+      color: white; }
+  #header .dropBtn ul li button {
+    padding: 10px;
+    background: #53B778;
+    color: white;
+    border: 2px solid #53B778;
+    transition: all 0.3s ease;
+    margin-top: 20px; }
+    #header .dropBtn ul li button:hover {
+      background: white;
+      color: #53B778;
+      border: 2px solid #53B778; }
+
+#quoteBox {
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  transition: all 0.3s ease;
+  display: none; }
+  #quoteBox .quoteBoxItem {
+    margin: 30px auto;
+    width: 70%;
+    padding: 10px 30px;
+    border: 1px solid lightgray; }
+    #quoteBox .quoteBoxItem .closeBtn {
+      font-size: 2em;
+      color: lightgray; }
+    #quoteBox .quoteBoxItem .custom-form {
+      margin: 25px auto 0;
+      width: 100%; }
+      #quoteBox .quoteBoxItem .custom-form .formWrapper {
+        padding-left: 30px;
+        padding-right: 30px; }
+      #quoteBox .quoteBoxItem .custom-form h3 {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 15px; }
+      #quoteBox .quoteBoxItem .custom-form .formgroup {
+        position: relative;
+        margin-bottom: 0;
+        color: #323a45;
+        padding: 8px 0; }
+        #quoteBox .quoteBoxItem .custom-form .formgroup span {
+          font-size: 16px;
+          position: absolute;
+          top: 22px;
+          left: 0;
+          color: #606060; }
+        #quoteBox .quoteBoxItem .custom-form .formgroup input {
+          height: 50px;
+          border: medium none;
+          width: 100%;
+          overflow: hidden;
+          height: 44px;
+          padding: 10px 25px;
+          box-shadow: none;
+          border-radius: 0;
+          border-bottom: 2px solid #d5d5d5; }
+        #quoteBox .quoteBoxItem .custom-form .formgroup textarea {
+          height: 90px;
+          width: 100%;
+          border: medium none;
+          border-bottom: 2px solid #d5d5d5;
+          padding: 10px 25px;
+          box-shadow: none;
+          border-radius: 0;
+          outline: none;
+          resize: none; }
+    #quoteBox .quoteBoxItem .btnForm {
+      width: 100%;
+      padding: 10px;
+      margin-top: 30px;
+      background: #53B778;
+      color: white;
+      border: 2px solid #53B778;
+      transition: all 0.3s ease;
+      font-size: 15px;
+      font-weight: bold; }
+      #quoteBox .quoteBoxItem .btnForm:hover {
+        background: none; }
+        #quoteBox .quoteBoxItem .btnForm:hover span, #quoteBox .quoteBoxItem .btnForm:hover i {
+          color: #53B778; }
+    #quoteBox .quoteBoxItem .formContact h3 {
+      font-weight: bold;
+      color: #323A45;
+      border-bottom: 2px solid #53B778;
+      padding-bottom: 15px;
+      letter-spacing: 1px; }
+    #quoteBox .quoteBoxItem .formContact ul {
+      list-style: none;
+      padding: 0; }
+      #quoteBox .quoteBoxItem .formContact ul li {
+        padding-top: 10px; }
+        #quoteBox .quoteBoxItem .formContact ul li span {
+          vertical-align: top; }
+        #quoteBox .quoteBoxItem .formContact ul li div {
+          width: 85%;
+          display: inline-block; }
+          #quoteBox .quoteBoxItem .formContact ul li div h4 {
+            color: gray;
+            margin: 0;
+            font-size: 1.15em;
+            line-height: 25px; }
+    #quoteBox .quoteBoxItem .md4Box {
+      border: 1px solid lightgray;
+      padding: 20px 22px;
+      margin-bottom: 15px; }
+      #quoteBox .quoteBoxItem .md4Box span {
+        font-size: 36px;
+        display: inline-block;
+        padding-right: 25px;
+        border-right: 1px solid #d5d5d5;
+        color: #53b778;
+        line-height: 50px;
+        margin-bottom: 5px; }
+      #quoteBox .quoteBoxItem .md4Box div {
+        display: inline-block;
+        margin-left: 21px; }
+      #quoteBox .quoteBoxItem .md4Box h6 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #606060;
+        margin: 0; }
+        @media screen and (max-width: 767px) {
+          #quoteBox .quoteBoxItem .md4Box h6 {
+            font-size: 20px; } }
+      #quoteBox .quoteBoxItem .md4Box p {
+        font-size: 16px;
+        color: #606060;
+        line-height: 26px; }
+        @media screen and (max-width: 767px) {
+          #quoteBox .quoteBoxItem .md4Box p {
+            font-size: 14px; } }
+      #quoteBox .quoteBoxItem .md4Box ul {
+        padding: 0;
+        margin: 14px 0px; }
+        #quoteBox .quoteBoxItem .md4Box ul li {
+          list-style: none;
+          display: inline-block;
+          border-radius: 50%;
+          background: lightgray;
+          padding: 8px 11px;
+          margin-right: 8px;
+          cursor: pointer; }
+          #quoteBox .quoteBoxItem .md4Box ul li:hover {
+            background: #53B778; }
+          #quoteBox .quoteBoxItem .md4Box ul li a i {
+            color: white;
+            font-size: 22px; }
+          #quoteBox .quoteBoxItem .md4Box ul li a .fa-facebook {
+            padding: 0px 3px; }
+
+#cover {
+  height: 440px;
+  background: url("../image/contact-banner.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 120px; }
+  #cover h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: white; }
+  #cover p {
+    font-size: 18px;
+    margin-top: 30px;
+    width: 550px;
+    color: white; }
+  @media screen and (max-width: 1200px) {
+    #cover h1 {
+      font-size: 38px;
+      margin-top: 40px; } }
+  @media screen and (max-width: 768px) {
+    #cover p {
+      width: 100%; } }
+
+#contact {
+  padding: 50px 0 100px 0; }
+  #contact .conInner1 h2 {
+    color: #53B778;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray; }
+  @media screen and (max-width: 1200px) {
+    #contact h2 {
+      font-size: 24px; } }
+  #contact .conInner2 .col-sm-8 {
+    padding-left: 0; }
+    @media screen and (max-width: 767px) {
+      #contact .conInner2 .col-sm-8 {
+        margin: 0; } }
+    @media screen and (max-width: 1199px) and (min-width: 992px) {
+      #contact .conInner2 .col-sm-8 {
+        width: 60.333333%; } }
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+      #contact .conInner2 .col-sm-8 {
+        width: 51.333333%; } }
+    @media screen and (max-width: 767px) {
+      #contact .conInner2 .col-sm-8 button {
+        width: 100%;
+        text-align: center; } }
+    #contact .conInner2 .col-sm-8 input {
+      outline: none; }
+  #contact .conInner2 #mesInput {
+    border-bottom: 2px solid lightgray;
+    width: 96.5%;
+    margin-top: 20px;
+    padding: 40px 0px;
+    margin-left: 10px; }
+  #contact .conInner2 .col-md-6 div {
+    display: inline-block;
+    float: left;
+    border-bottom: 2px solid lightgray;
+    width: 100%; }
+  #contact .conInner2 input {
+    border: none;
+    margin-top: 20px;
+    padding: 20px 0px; }
+    @media screen and (max-width: 992px) {
+      #contact .conInner2 input {
+        width: 87%; } }
+  #contact .conInner2 button {
+    padding: 10px;
+    font-weight: 600;
+    background: #53B778;
+    color: white;
+    border: 2px solid #53B778;
+    transition: all 0.3s ease;
+    display: block;
+    margin-top: 50px;
+    margin-left: 10px;
+    font-size: 14px;
+    letter-spacing: 1.2px; }
+  #contact .conInner2 .col-sm-4 {
+    padding-top: 40px; }
+    @media screen and (max-width: 1199px) and (min-width: 992px) {
+      #contact .conInner2 .col-sm-4 {
+        width: 40.333333%; } }
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+      #contact .conInner2 .col-sm-4 {
+        width: 52.333333%; } }
+    @media screen and (max-width: 359px) {
+      #contact .conInner2 .col-sm-4 {
+        display: none; } }
+  #contact .conInner2 .md4Box {
+    border: 1px solid lightgray;
+    padding: 20px 22px;
+    margin-bottom: 15px; }
+    #contact .conInner2 .md4Box span {
+      font-size: 36px;
+      display: inline-block;
+      padding-right: 25px;
+      border-right: 1px solid #d5d5d5;
+      color: #53b778;
+      line-height: 50px;
+      margin-bottom: 5px; }
+    #contact .conInner2 .md4Box div {
+      display: inline-block;
+      margin-left: 21px; }
+    #contact .conInner2 .md4Box h6 {
+      font-size: 24px;
+      font-weight: 600;
+      color: #606060;
+      margin: 0; }
+      @media screen and (max-width: 767px) {
+        #contact .conInner2 .md4Box h6 {
+          font-size: 20px; } }
+    #contact .conInner2 .md4Box p {
+      font-size: 16px;
+      color: #606060;
+      line-height: 26px; }
+      @media screen and (max-width: 767px) {
+        #contact .conInner2 .md4Box p {
+          font-size: 14px; } }
+    #contact .conInner2 .md4Box ul {
+      padding: 0;
+      margin: 14px 0px; }
+      #contact .conInner2 .md4Box ul li {
+        list-style: none;
+        display: inline-block;
+        border-radius: 50%;
+        background: lightgray;
+        padding: 8px 11px;
+        margin-right: 8px;
+        cursor: pointer; }
+        #contact .conInner2 .md4Box ul li:hover {
+          background: #53B778; }
+        #contact .conInner2 .md4Box ul li a i {
+          color: white;
+          font-size: 22px; }
+        #contact .conInner2 .md4Box ul li a .fa-facebook {
+          padding: 0px 3px; }
+  #contact #map1 {
+    text-align: center; }
+    #contact #map1 h2 {
+      color: #53B778;
+      font-size: 30px;
+      font-weight: 600;
+      margin: 70px 0 30px 0; }
+    #contact #map1 li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 5%;
+      margin-bottom: 10px; }
+      #contact #map1 li img {
+        width: 70px;
+        height: 110px; }
+    #contact #map1 p {
+      font-size: 16px;
+      margin-bottom: 33px; }
+  #contact #map2 {
+    height: 500px; }
+    #contact #map2 iframe {
+      width: 100%; }
+
+#sign {
+  width: 100%;
+  background: #323a45;
+  padding: 40px 0; }
+  #sign .container {
+    position: relative; }
+    #sign .container .topBtn {
+      width: 50px;
+      height: 50px;
+      background: white;
+      position: absolute;
+      text-decoration: none;
+      top: -65px;
+      left: 45%;
+      box-shadow: 0px 0px 8px darkgray;
+      border-radius: 50%;
+      margin: 0 auto; }
+      #sign .container .topBtn:hover {
+        text-decoration: none; }
+      #sign .container .topBtn span {
+        line-height: 50px; }
+    #sign .container h2 {
+      color: white;
+      margin-bottom: 40px; }
+    #sign .container input {
+      width: 90%;
+      height: 40px;
+      outline: none;
+      border: none;
+      padding-left: 8px; }
+    #sign .container .col-md-4 div {
+      padding: 5px;
+      background: white;
+      margin-bottom: 20px; }
+      #sign .container .col-md-4 div input {
+        width: 90%;
+        height: 40px;
+        outline: none;
+        border: none;
+        padding-left: 8px; }
+      #sign .container .col-md-4 div span {
+        font-size: 17px; }
+    #sign .container .col-md-4 .signBtn {
+      width: 100%;
+      height: 50px;
+      background: #53B778;
+      border: 2px solid #53B778;
+      outline: none;
+      color: white;
+      font-weight: bold;
+      transition: all 0.3s ease; }
+      #sign .container .col-md-4 .signBtn:hover {
+        background: none;
+        color: #53B778; }
+  #sign h4 {
+    margin-top: 40px; }
+
+#footer {
+  width: 100%;
+  padding: 50px 0;
+  background: #EAEAEA; }
+  #footer img {
+    padding: 10px 0; }
+  #footer h4 {
+    color: #787878; }
+  #footer ul {
+    padding: 0; }
+    #footer ul li {
+      list-style-type: none;
+      line-height: 30px;
+      color: #B6B6B6; }
+      #footer ul li a {
+        color: #B6B6B6; }
+        #footer ul li a:hover {
+          text-decoration: none;
+          color: #53B778; }
+  #footer .socialIcon li a {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    background: lightgray;
+    border-radius: 50px;
+    float: left;
+    color: white;
+    font-size: 1.2em;
+    transition: all 0.3s ease; }
+    #footer .socialIcon li a:hover {
+      color: white;
+      background: #53B778; }
+
+/*# sourceMappingURL=style.css.map */

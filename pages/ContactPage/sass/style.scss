@@ -1,0 +1,785 @@
+$myWidthHeight: 100%;
+$myColor: #53B778;
+$transition: all .3s ease;
+@mixin buttons {
+	padding: 10px;
+	font-weight:600;
+	background: $myColor;
+	color: white;
+	border: 2px solid $myColor;
+	transition: $transition;
+}
+
+body {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+}
+#header {
+	.container {
+		padding: 0px 20px;
+	}
+	.headerSearch {
+		padding: 10px 0;
+
+
+		input {
+			border: none;
+			outline: none;
+		}
+
+	}
+
+	.headerPhone {
+		padding-left: 20px;
+
+		@media screen and (min-width: 767px){
+   			 	float: right;
+		}
+
+		@media screen and (max-width: 767px){
+   			 	float: left;
+		}
+		@media screen and (max-width: 330px){
+			a{
+				font-size: 11px;
+			}
+		}
+
+		a {
+			color: #606473;
+			&:hover {
+				text-decoration: none;
+				color: $myColor;
+			}
+		}
+
+		img {
+			padding: 0 20px;
+			}
+	
+	}
+
+	.navbarSection {
+			#listBtn{
+				@media screen and (min-width: 767px){
+				display: none;
+			}
+			@media screen and (max-width: 767px){
+				background:white;
+			}
+			}
+		@media screen and (max-width: 767px) {
+			padding-bottom: 0px;
+			padding-top: 10px;
+		}
+			@media screen and (min-width:200px) and (max-width: 314px) {
+				img{
+					padding:8px;
+				}
+				#listBtn{
+					font-size: 25px;
+				}
+		}
+		img {
+			@media screen and (min-width: 767px) and (max-width: 992px){
+				padding: 8px 0;
+		}
+			@media screen and (min-width: 314px)and (max-width: 767px){
+				padding: 8px 20px;
+			}
+		}
+		@media screen and (min-width: 767px) and (max-width: 992px){
+			ul li {
+				font-size: 0.9em;
+				padding-left: 15px;
+			}
+		}
+		@media screen and (min-width: 992px) and (max-width: 1200px){
+			ul li {
+				padding-left: 30px;
+			}
+		}
+		@media screen and (min-width: 1200px){
+			ul li {
+				padding-left: 31px;
+
+			}	
+		}
+		@media screen and (min-width: 767px){
+			ul {
+				height: 80px;
+				li{
+					font-size: 15px;
+				}	
+			}
+		}
+		@media screen and (min-width: 1200px){
+			ul li{
+				font-size: 18px;
+			}
+		}
+		.navbar-header{
+			span{
+				font-size: 30px;
+				font-weight: 900;
+				padding:20px;
+			}
+		
+		}
+		width: $myWidthHeight;
+		padding: 30px 0;
+		.aktive{
+			border-bottom: 2px solid $myColor;
+		}
+		.navPage{
+			position:relative;
+			.innernavPage {
+				display: inline-block;
+				cursor: pointer;
+				a {
+					padding: 15px 0 10px 0;
+					border-bottom: 0px solid $myColor;
+					color: #606473;
+					transition: $transition;
+					background:white;
+
+					&:hover {
+						background: none;
+						color: #7D7D7D;
+						border-bottom: 2px solid $myColor;
+					}
+				}
+
+				button {
+					padding: 10px;
+					background: $myColor;
+					color: white;
+					border: 2px solid $myColor;
+					transition: $transition;
+
+
+					&:hover {
+						background: white;
+						color: $myColor;
+						border: 2px solid $myColor;
+					}
+				}
+			}
+		}
+		#serDropNav {
+			position:absolute;
+			width: 320px;
+			height: 276px;
+			list-style:none;
+			background:white;
+			z-index: 10;
+		    top: 50px;
+			padding: 34px 25px;
+				li{
+				    padding: 5px;
+					&:hover {
+				    	color: $myColor;
+				    }
+					a{
+    					font-size: 14px;
+    					color: #606060;
+    					padding-left: 25px;
+    					text-decoration: none;
+						&:hover {
+				    	color: $myColor;
+				    }
+					}
+					span {
+					    font-size: 16px;
+					}
+				}
+			}
+	}
+
+	#serDropNav2 {
+			 	position: relative;
+    			width: 320px;
+			    height: 240px;
+			    list-style: none;
+			    background: white;
+			    padding: 34px 0px;
+						li{
+						    padding: 5px;
+						    &:hover {
+				    			color: $myColor;
+				   			 }
+							a{
+		    					font-size: 14px;
+		    					color: #606060;
+		    					padding-left: 25px;
+		    					text-decoration: none;
+								&:hover {
+				    				color: $myColor;
+				    			}
+							}
+							span {
+							    font-size: 16px;
+							}
+						}		
+				
+			}
+	.dropBtn {
+		ul {
+			background:white;
+			li {
+				a {
+					padding: 10px 0 10px 20px;
+					color: #606473;
+					transition: $transition;
+					border-bottom: 1px solid $myColor;
+
+					&:hover {
+						background: $myColor;
+						color: white;
+					}
+				}
+
+				button {
+					padding: 10px;
+					background: $myColor;
+					color: white;
+					border: 2px solid $myColor;
+					transition: $transition;
+					margin-top: 20px;
+
+
+					&:hover {
+						background: white;
+						color: $myColor;
+						border: 2px solid $myColor;
+					}
+				}
+			}
+		}
+
+	}
+	
+}
+
+#quoteBox {
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,1);
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 11;
+	transition: $transition;
+	display: none;
+
+	.quoteBoxItem{	
+	margin: 30px auto;
+	width: 70%;
+	padding: 10px 30px;
+	border: 1px solid lightgray;
+		.closeBtn {
+					font-size: 2em;
+					color: lightgray;
+				}
+
+	.custom-form{
+	    margin: 25px auto 0;
+	    width: 100%;
+		    .formWrapper{
+		    padding-left: 30px;
+		    padding-right: 30px;
+		    }
+		    h3{
+		    font-weight: bold;
+		   	font-size: 24px;
+    		line-height: 15px;
+		    }
+		    .formgroup{
+				position: relative;
+			    margin-bottom: 0;
+			    color: #323a45;
+			    padding: 8px 0;
+			    
+			    span{
+			    	font-size: 16px;
+			    	position: absolute;
+				    top: 22px;
+				    left: 0;
+				    color: #606060;
+			    }
+			    input{
+			    	height: 50px;
+			    	border: medium none;
+				    width: 100%;
+				    overflow: hidden;
+				    height: 44px;
+				    padding: 10px 25px;
+				    box-shadow:none;
+				    border-radius:0;
+				    border-bottom: 2px solid #d5d5d5;
+			    }
+			    textarea{
+			    	height: 90px;
+			    	width: 100%;
+			    	border: medium none;
+			    	border-bottom: 2px solid #d5d5d5;
+			    	padding: 10px 25px;
+			    	box-shadow:none;
+			    	border-radius:0;
+			    	outline: none;
+			    	resize: none;
+
+			    }
+		    }
+		}
+		.btnForm{
+			width: $myWidthHeight;
+			padding: 10px;
+			margin-top: 30px;
+			background: $myColor;
+			color: white;
+			border: 2px solid $myColor;
+			transition: $transition;
+			font-size: 15px;
+			font-weight: bold;
+
+			&:hover{
+				background:none;
+				span, i{
+					color: $myColor;
+				}
+			}
+		}
+		.formContact {
+			
+			
+			h3 {
+				font-weight: bold;
+				color: #323A45;
+				border-bottom: 2px solid $myColor;
+				padding-bottom: 15px;
+				letter-spacing: 1px;
+			}
+			ul {
+				list-style: none;
+				padding: 0;
+				li {
+					padding-top: 10px;
+					span {
+						vertical-align: top;
+					}
+					div {
+						width: 85%;
+						display: inline-block;
+							
+							h4 {
+							color: gray; 
+							margin: 0;
+							font-size: 1.15em;
+							line-height: 25px;
+							}
+					}
+				}
+			}
+		}
+		.md4Box {
+					border:1px solid lightgray;
+				 	padding: 20px 22px;
+		    		margin-bottom: 15px;
+					 span {
+					 	    font-size: 36px;
+		    				display: inline-block;
+						    padding-right: 25px;
+						    border-right: 1px solid #d5d5d5;
+						    color: #53b778;
+						    line-height: 50px;
+						    margin-bottom: 5px;
+					 }
+					 div {
+					 	display: inline-block;
+		    			margin-left: 21px;
+					 }
+					 h6{
+					 	font-size: 24px;
+		   				font-weight: 600;
+		    			color: #606060;
+		    			margin:0;
+		    			@media screen and (max-width:767px){
+							font-size: 20px;
+						}
+					} 
+					 p{
+					 	font-size: 16px;
+		   				color: #606060;
+		    			line-height: 26px;
+		    			@media screen and (max-width:767px){
+							font-size: 14px;
+						}
+					}
+					 ul {
+					 	padding:0;
+					 	margin:14px 0px;
+					 	 li{
+					 	 	list-style: none;
+					 	 	display: inline-block;
+					 	 	border-radius:50%;
+					 	 	background:lightgray;
+					 	 	padding: 8px 11px;
+					 	 	margin-right: 8px;
+					 	 	cursor: pointer;
+
+					 	 	&:hover {
+					 	 			background: $myColor;
+					 	 		}
+
+					 	 	a {
+					 	 		i {
+					 	 			color:white;
+					 	 			font-size: 22px;
+					 	 		}
+					 	 		.fa-facebook {padding:0px 3px;}
+
+					 	 	}
+					 	 }
+					 }
+			}
+}
+}
+
+#cover {
+	height:440px;
+	background:url("../image/contact-banner.jpg");
+	background-attachment:fixed;
+	background-size:cover;
+	padding-top:120px;
+
+		h1{
+			font-size: 60px;
+			font-weight: 600;
+			color: white;
+		}
+		p{
+			font-size: 18px;
+			margin-top: 30px;
+	   		width: 550px;
+	   		color: white;
+		}
+
+	@media screen and (max-width: 1200px) {
+			h1 {
+				font-size: 38px;
+				margin-top: 40px;
+			}
+		}
+	@media screen and (max-width: 768px) {
+			p {
+				width: 100%;
+			}
+		}	
+}
+
+#contact {
+	padding: 50px 0 100px 0;
+
+
+	.conInner1 {
+		h2{
+		color: $myColor;
+		font-size: 30px;
+	    font-weight: 600;
+	    padding-bottom:10px; 
+		border-bottom:1px solid lightgray;
+	}
+	}
+
+	@media screen and (max-width:1200px) {
+				h2 {font-size:24px;}
+	}
+
+	.conInner2{
+		.col-sm-8 {
+			padding-left:0;
+			@media screen and (max-width:767px){
+				margin:0;
+			}
+			@media screen and (max-width:1199px) and (min-width:992px){
+				width: 60.333333%;
+			}
+			@media screen and (max-width:991px) and (min-width:768px){
+				width: 51.333333%;
+			}
+			button {
+				@media screen and (max-width:767px){
+					width: 100%;
+					text-align: center;
+				}
+			}
+			input{outline:none;}
+		}
+		#mesInput {
+			border-bottom:2px solid lightgray;
+			width: 96.5%;
+			margin-top: 20px;
+			padding: 40px 0px;
+    		margin-left: 10px;
+		}
+		.col-md-6 div {
+			display:inline-block;
+			float: left;
+			border-bottom:2px solid lightgray;
+			width: 100%;
+		}
+		input{
+			border:none;
+			margin-top: 20px;
+			padding:20px 0px;
+			@media screen and (max-width:992px) {
+				width: 87%;
+			}
+		}
+		button {
+			@include buttons;
+			display: block;
+			margin-top: 50px;
+			margin-left: 10px;
+		    font-size: 14px;
+    		letter-spacing: 1.2px;
+		}
+		.col-sm-4 {
+			padding-top:40px;
+			@media screen and (max-width:1199px) and (min-width:992px){
+				width: 40.333333%;
+			}
+			@media screen and (max-width:991px) and (min-width:768px){
+				width: 52.333333%;
+			}
+			@media screen and (max-width:359px){
+				display: none;
+			}
+		}
+		.md4Box {
+			border:1px solid lightgray;
+		 	padding: 20px 22px;
+    		margin-bottom: 15px;
+			 span {
+			 	    font-size: 36px;
+    				display: inline-block;
+				    padding-right: 25px;
+				    border-right: 1px solid #d5d5d5;
+				    color: #53b778;
+				    line-height: 50px;
+				    margin-bottom: 5px;
+			 }
+			 div {
+			 	display: inline-block;
+    			margin-left: 21px;
+			 }
+			 h6{
+			 	font-size: 24px;
+   				font-weight: 600;
+    			color: #606060;
+    			margin:0;
+    			@media screen and (max-width:767px){
+					font-size: 20px;
+				}
+			} 
+			 p{
+			 	font-size: 16px;
+   				color: #606060;
+    			line-height: 26px;
+    			@media screen and (max-width:767px){
+					font-size: 14px;
+				}
+			}
+			 ul {
+			 	padding:0;
+			 	margin:14px 0px;
+			 	 li{
+			 	 	list-style: none;
+			 	 	display: inline-block;
+			 	 	border-radius:50%;
+			 	 	background:lightgray;
+			 	 	padding: 8px 11px;
+			 	 	margin-right: 8px;
+			 	 	cursor: pointer;
+
+			 	 	&:hover {
+			 	 			background: $myColor;
+			 	 		}
+
+			 	 	a {
+			 	 		i {
+			 	 			color:white;
+			 	 			font-size: 22px;
+			 	 		}
+			 	 		.fa-facebook {padding:0px 3px;}
+
+			 	 	}
+			 	 }
+			 }
+		}
+	}
+
+	#map1 {
+		text-align: center;
+		h2 {
+			color: $myColor;
+			font-size: 30px;
+	    	font-weight: 600;
+	        margin: 70px 0 30px 0
+		}
+		li{
+			list-style: none;
+			display: inline-block;
+			margin-right: 5%;
+		    margin-bottom: 10px;
+			img{
+				width: 70px;
+				height: 110px;
+			}	
+		}
+		p{
+		    font-size: 16px;
+		    margin-bottom: 33px;
+		}
+	}
+	#map2 {
+		height: 500px;
+		iframe{width:100%;}
+	}
+}
+
+#sign {
+	width: 100%;
+	background:#323a45;
+	padding:40px 0;
+
+	.container{
+		position: relative;
+
+		.topBtn {
+			width: 50px;
+			height: 50px;
+			background: white;
+			position: absolute;
+			text-decoration: none;
+			top: -65px;	
+			left: 45%;
+			box-shadow: 0px 0px 8px darkgray;
+			border-radius: 50%;
+			margin: 0 auto;
+
+			&:hover {
+				text-decoration: none;
+			}
+
+			span {
+				line-height: 50px;
+			}
+		}
+
+		h2 {
+			color:white;
+			margin-bottom:40px;
+		}
+		input {
+			width: 90%;
+			height: 40px;
+			outline: none;
+			border:none;
+			padding-left:8px;
+		}
+		
+			.col-md-4 {
+				div {
+				padding:5px;
+				background:white;
+				margin-bottom:20px;
+
+					input {
+						width: 90%;
+						height: 40px;
+						outline: none;
+						border:none;
+						padding-left:8px;
+					}
+					span{
+						font-size: 17px;
+					}
+					
+					}
+				
+				.signBtn{
+					width: 100%;
+					height: 50px;
+					background:$myColor;
+					border:2px solid $myColor;
+					outline: none;
+					color: white;
+					font-weight: bold;
+					transition: $transition;
+						&:hover{
+							background:none;
+							color: $myColor;
+
+						}
+					}
+			}
+		
+		}
+	h4{
+		margin-top:40px
+	}
+}
+
+#footer {
+	width: 100%;
+	padding: 50px 0;
+	background: #EAEAEA;
+	
+	img {
+		padding: 10px 0;
+	}
+
+	h4 {
+		color: #787878;
+	}
+
+	ul {
+		padding: 0;
+		li {
+			list-style-type: none;
+			line-height: 30px;
+			color: #B6B6B6;
+			a {
+				color: #B6B6B6;
+				&:hover {
+					text-decoration: none;
+					color: $myColor;
+				}
+			}
+		}
+	}
+	.socialIcon {
+		li {
+			
+			a {
+				margin-right: 10px;
+				width: 30px;
+				height: 30px;
+				background: lightgray;
+				border-radius: 50px;
+				float: left;
+				color: white;
+				font-size: 1.2em;
+				transition: $transition;
+				
+			 		&:hover {
+			 			color: white;
+			 			background: $myColor;
+			 		}
+		 	}
+		}
+	}
+}
+
